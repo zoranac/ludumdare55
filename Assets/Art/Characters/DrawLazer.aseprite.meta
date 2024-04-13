@@ -1,0 +1,1819 @@
+fileFormatVersion: 2
+guid: 68eca7d1373dcc44c813455410c6fd65
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: DrawLazer_Frame_0
+    originalName: 
+    pivot: {x: 1.8333335, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 496
+      y: 70
+      width: 6
+      height: 2
+    spriteID: 74adc868beae032469fd0fb8766763d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 496, y: 70}
+  - name: DrawLazer_Frame_1
+    originalName: 
+    pivot: {x: 1.5, y: -37.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 502
+      width: 8
+      height: 4
+    spriteID: 3e5bb185bc3617544b6af61d53ed7875
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 502}
+  - name: DrawLazer_Frame_2
+    originalName: 
+    pivot: {x: 1.5, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 498
+      width: 8
+      height: 8
+    spriteID: 1a56f42299ff3614bb57ef695184923c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 498}
+  - name: DrawLazer_Frame_3
+    originalName: 
+    pivot: {x: 1.5, y: -9.866667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 490
+      width: 8
+      height: 15
+    spriteID: 2dfbb0279a910874f86b611ed7ef61e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 490}
+  - name: DrawLazer_Frame_4
+    originalName: 
+    pivot: {x: 1.5, y: -7.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 302
+      width: 8
+      height: 20
+    spriteID: fd44ffed0d86b1e4b96188701f54d7f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 302}
+  - name: DrawLazer_Frame_5
+    originalName: 
+    pivot: {x: 1.5, y: -5.692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 236
+      width: 8
+      height: 26
+    spriteID: 3db5ac137a04aec4c8b6eb28a2f2c01b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 236}
+  - name: DrawLazer_Frame_6
+    originalName: 
+    pivot: {x: 1.5, y: -4.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 158
+      width: 8
+      height: 32
+    spriteID: f4378eba5ccbd7d44b0a8053402a69a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 158}
+  - name: DrawLazer_Frame_7
+    originalName: 
+    pivot: {x: 1.5, y: -4.352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 456
+      width: 8
+      height: 34
+    spriteID: d62278d623dca5541a6a2938d7f528a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 456}
+  - name: DrawLazer_Frame_8
+    originalName: 
+    pivot: {x: 0.99999964, y: -2.1142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 256
+      width: 18
+      height: 70
+    spriteID: a2eb86bda52c5df4c844f946cadfa1e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 256}
+  - name: DrawLazer_Frame_9
+    originalName: 
+    pivot: {x: 0.75, y: -1.3831776}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 59
+      width: 32
+      height: 107
+    spriteID: 41af65ce40fcc2e49b7bbf4e403e0ee9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 59}
+  - name: DrawLazer_Frame_10
+    originalName: 
+    pivot: {x: 0.63265294, y: -0.9736842}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 223
+      width: 49
+      height: 152
+    spriteID: 3a49b926b0d0c5843a684afd892f0469
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 223}
+  - name: DrawLazer_Frame_11
+    originalName: 
+    pivot: {x: 1.5, y: -1.027027}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 334
+      width: 8
+      height: 148
+    spriteID: 1bcd6222369b6034282183e0f36d4ae8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 334}
+  - name: DrawLazer_Frame_12
+    originalName: 
+    pivot: {x: 3.000001, y: -1.5210085}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 383
+      width: 3
+      height: 119
+    spriteID: c648133733089a148b2023735ba6f2f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 383}
+  - name: DrawLazer_Frame_13
+    originalName: 
+    pivot: {x: 3.333334, y: -2.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 204
+      width: 3
+      height: 96
+    spriteID: 12ba9bb134e84ff4281731170900e3a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 204}
+  - name: DrawLazer_Frame_14
+    originalName: 
+    pivot: {x: 4.500002, y: -8.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 461
+      width: 2
+      height: 32
+    spriteID: 4535775c4f971ed45959b75e0ea94f57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 461}
+  - name: DrawLazer_Frame_15
+    originalName: 
+    pivot: {x: 1.8333335, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 475
+      y: 20
+      width: 6
+      height: 2
+    spriteID: a44c80ebb9982824e9d0afe70cab23d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 475, y: 20}
+  - name: DrawLazer_Frame_16
+    originalName: 
+    pivot: {x: 1.5, y: -25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 502
+      width: 8
+      height: 6
+    spriteID: d6ea8acf398f53749b9818ff1a6f67bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 502}
+  - name: DrawLazer_Frame_17
+    originalName: 
+    pivot: {x: 1.5, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 497
+      y: 115
+      width: 8
+      height: 8
+    spriteID: 2a4f71aae5919434496559fd08679bdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 497, y: 115}
+  - name: DrawLazer_Frame_18
+    originalName: 
+    pivot: {x: 1.5, y: -7.2105265}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 330
+      width: 8
+      height: 19
+    spriteID: 9fdca3b1e4b52044da5b282a544e21e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 330}
+  - name: DrawLazer_Frame_19
+    originalName: 
+    pivot: {x: 1.5, y: -5.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 270
+      width: 8
+      height: 24
+    spriteID: 69d2853c10394044daa4cbd5e7b91594
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 270}
+  - name: DrawLazer_Frame_20
+    originalName: 
+    pivot: {x: 1.5, y: -4.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 198
+      width: 8
+      height: 30
+    spriteID: 6331a3018ebb65140a5100bf716e4080
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 198}
+  - name: DrawLazer_Frame_21
+    originalName: 
+    pivot: {x: 1.5, y: -3.3333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 308
+      width: 8
+      height: 36
+    spriteID: 19bc2b2e1927ad847ba62559512f4a7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 308}
+  - name: DrawLazer_Frame_22
+    originalName: 
+    pivot: {x: 1.5, y: -3.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 158
+      width: 8
+      height: 38
+    spriteID: ab279181efa97c64d849ac2111e24b6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 158}
+  - name: DrawLazer_Frame_23
+    originalName: 
+    pivot: {x: 0.99999964, y: -1.1081082}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 174
+      width: 18
+      height: 74
+    spriteID: d700abd0b9b6d02408352b6b4af92361
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 174}
+  - name: DrawLazer_Frame_24
+    originalName: 
+    pivot: {x: 0.75, y: -0.40540543}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 383
+      width: 32
+      height: 111
+    spriteID: c0e2da55473655847982f8e82b0ed39b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 383}
+  - name: DrawLazer_Frame_25
+    originalName: 
+    pivot: {x: 0.63265294, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 59
+      width: 49
+      height: 156
+    spriteID: 4e5fae1a551300345b3f5ed9a7a88649
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 59}
+  - name: DrawLazer_Frame_26
+    originalName: 
+    pivot: {x: 2.5000005, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 334
+      width: 4
+      height: 151
+    spriteID: a8160ec0efa0878458e9e2f59010ff91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 334}
+  - name: DrawLazer_Frame_27
+    originalName: 
+    pivot: {x: 3.000001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 334
+      width: 3
+      height: 119
+    spriteID: b23176651f40ec648b6e9bcaa50ab03c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 334}
+  - name: DrawLazer_Frame_28
+    originalName: 
+    pivot: {x: 3.333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 352
+      width: 3
+      height: 96
+    spriteID: 85a12e81e3c0b3242b01f1687be832e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 352}
+  - name: DrawLazer_Frame_29
+    originalName: 
+    pivot: {x: 4.500002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 256
+      width: 2
+      height: 32
+    spriteID: 6499e205269a8f644a6eb53735e298ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 256}
+  - name: DrawLazer_Frame_30
+    originalName: 
+    pivot: {x: 1.8333335, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 489
+      y: 20
+      width: 6
+      height: 2
+    spriteID: 15e644a1a2becab43b7a7f1fe61b20f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 489, y: 20}
+  - name: DrawLazer_Frame_31
+    originalName: 
+    pivot: {x: 1.5714288, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 501
+      y: 99
+      width: 7
+      height: 8
+    spriteID: 97f66d4f728ebfa40972b3aceb0c81f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 501, y: 99}
+  - name: DrawLazer_Frame_32
+    originalName: 
+    pivot: {x: 1.5, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 357
+      width: 8
+      height: 8
+    spriteID: 63c79a45208054047b9727255151c1f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 357}
+  - name: DrawLazer_Frame_33
+    originalName: 
+    pivot: {x: 1.2352943, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 489
+      y: 81
+      width: 17
+      height: 8
+    spriteID: 258d6feb188bc0d48b0b686f0f3d6484
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 489, y: 81}
+  - name: DrawLazer_Frame_34
+    originalName: 
+    pivot: {x: 1.1818181, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 158
+      width: 22
+      height: 8
+    spriteID: d8a5029f4804b3d45a9061454adc46bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 133, y: 158}
+  - name: DrawLazer_Frame_35
+    originalName: 
+    pivot: {x: 1.1290324, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 475
+      y: 4
+      width: 31
+      height: 8
+    spriteID: d102dc266f673b34a919ab53cf41fee7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 475, y: 4}
+  - name: DrawLazer_Frame_36
+    originalName: 
+    pivot: {x: 1.102564, y: -7.833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 4
+      width: 39
+      height: 18
+    spriteID: d4ccd402996e52245bbd8ff4ab21c1c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 4}
+  - name: DrawLazer_Frame_37
+    originalName: 
+    pivot: {x: 1.0380951, y: -4.21875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 59
+      width: 105
+      height: 32
+    spriteID: 74224be4fcaddc34eaa455072e1cc301
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 59}
+  - name: DrawLazer_Frame_38
+    originalName: 
+    pivot: {x: 1.0232558, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 321
+      y: 99
+      width: 172
+      height: 8
+    spriteID: 183bffcbfe63a4d43b435f84e8930fbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 321, y: 99}
+  - name: DrawLazer_Frame_39
+    originalName: 
+    pivot: {x: 1.0204082, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 131
+      width: 196
+      height: 8
+    spriteID: 7ef6748712bb712439038682f2763be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 131}
+  - name: DrawLazer_Frame_40
+    originalName: 
+    pivot: {x: 1.0204082, y: -2.744681}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 4
+      width: 196
+      height: 47
+    spriteID: f947b606931d39b4192901f5622a5328
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 4}
+  - name: DrawLazer_Frame_41
+    originalName: 
+    pivot: {x: 1.0416666, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 131
+      width: 192
+      height: 8
+    spriteID: 97cdd00432abc1843a5b73687f57d5fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 131}
+  - name: DrawLazer_Frame_42
+    originalName: 
+    pivot: {x: 1.242236, y: -50}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 327
+      y: 70
+      width: 161
+      height: 3
+    spriteID: dabf06bb1862e4649af25d51e9872a41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 327, y: 70}
+  - name: DrawLazer_Frame_43
+    originalName: 
+    pivot: {x: 1.4492754, y: -49.666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 147
+      width: 138
+      height: 3
+    spriteID: 5cf0fa9a7d8611448a8a3f817dd8a0c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 147}
+  - name: DrawLazer_Frame_44
+    originalName: 
+    pivot: {x: 2.7027028, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 147
+      width: 74
+      height: 2
+    spriteID: a9f18d4ff7409ac4984ed0b1652fb912
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 345, y: 147}
+  - name: DrawLazer_Frame_45
+    originalName: 
+    pivot: {x: 1.8333335, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 475
+      y: 46
+      width: 6
+      height: 2
+    spriteID: c461797628b95d8488404d5b1e454dc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 475, y: 46}
+  - name: DrawLazer_Frame_46
+    originalName: 
+    pivot: {x: 1.7142857, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 389
+      width: 7
+      height: 8
+    spriteID: 03bb34b8b79f3104590fe6ec0106dfe6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 389}
+  - name: DrawLazer_Frame_47
+    originalName: 
+    pivot: {x: 1.5, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 373
+      width: 8
+      height: 8
+    spriteID: a6e423f57377a5849aac5fb1c2feeaa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 373}
+  - name: DrawLazer_Frame_48
+    originalName: 
+    pivot: {x: 0.7058824, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 158
+      width: 17
+      height: 8
+    spriteID: 073bb0ffe77078f4eab2f7086947cce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 158}
+  - name: DrawLazer_Frame_49
+    originalName: 
+    pivot: {x: 0.54545456, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 158
+      width: 22
+      height: 8
+    spriteID: 7da80ad24232ee7429d70f15951e0baf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 158}
+  - name: DrawLazer_Frame_50
+    originalName: 
+    pivot: {x: 0.3870968, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 475
+      y: 30
+      width: 31
+      height: 8
+    spriteID: 2aba3bdf42a22c544a9156bef6e187d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 475, y: 30}
+  - name: DrawLazer_Frame_51
+    originalName: 
+    pivot: {x: 0.30769232, y: -7.833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 30
+      width: 39
+      height: 18
+    spriteID: cdcfc867647b8f64ab3d7e1ef40015be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 30}
+  - name: DrawLazer_Frame_52
+    originalName: 
+    pivot: {x: 0.11428572, y: -4.21875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 59
+      width: 105
+      height: 32
+    spriteID: 5efc3aec717a8b148bcb2cb316750469
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 214, y: 59}
+  - name: DrawLazer_Frame_53
+    originalName: 
+    pivot: {x: 0.069767445, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 115
+      width: 172
+      height: 8
+    spriteID: 906c6ba2702009e45be88cf7cfad613e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 115}
+  - name: DrawLazer_Frame_54
+    originalName: 
+    pivot: {x: 0.056603774, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 99
+      width: 212
+      height: 8
+    spriteID: 5c2c84d2086c40d4a8c522fe9149c979
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 99}
+  - name: DrawLazer_Frame_55
+    originalName: 
+    pivot: {x: 0.056603774, y: -2.744681}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 212
+      height: 47
+    spriteID: af3356e683117fd46afe8c4af1c1bd11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: DrawLazer_Frame_56
+    originalName: 
+    pivot: {x: 0.03846156, y: -18.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 115
+      width: 208
+      height: 8
+    spriteID: 00e48e19234c8bc4f89b1442776a73f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 115}
+  - name: DrawLazer_Frame_57
+    originalName: 
+    pivot: {x: -0.1299435, y: -50}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 327
+      y: 59
+      width: 177
+      height: 3
+    spriteID: deb2657775d7be4448542a2d35cfbf93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 327, y: 59}
+  - name: DrawLazer_Frame_58
+    originalName: 
+    pivot: {x: -0.29870132, y: -49.666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 327
+      y: 81
+      width: 154
+      height: 3
+    spriteID: 21e3d99cdfe617f4694f38344ccb82f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 327, y: 81}
+  - name: DrawLazer_Frame_59
+    originalName: 
+    pivot: {x: -1.2222222, y: -75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 147
+      width: 90
+      height: 2
+    spriteID: 98378292b0d77f3438876e7f41bff2e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 147}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 253253304
+    name: DrawLazer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: DrawLazer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 189
+        y: 150
+        width: 6
+        height: 2
+      spriteId: 74adc868beae032469fd0fb8766763d5
+    - name: DrawLazer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 188
+        y: 150
+        width: 8
+        height: 4
+      spriteId: 3e5bb185bc3617544b6af61d53ed7875
+    - name: DrawLazer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 8
+      spriteId: 1a56f42299ff3614bb57ef695184923c
+    - name: DrawLazer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 15
+      spriteId: 2dfbb0279a910874f86b611ed7ef61e3
+    - name: DrawLazer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 20
+      spriteId: fd44ffed0d86b1e4b96188701f54d7f6
+    - name: DrawLazer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 26
+      spriteId: 3db5ac137a04aec4c8b6eb28a2f2c01b
+    - name: DrawLazer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 32
+      spriteId: f4378eba5ccbd7d44b0a8053402a69a3
+    - name: DrawLazer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 34
+      spriteId: d62278d623dca5541a6a2938d7f528a8
+    - name: DrawLazer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 182
+        y: 148
+        width: 18
+        height: 70
+      spriteId: a2eb86bda52c5df4c844f946cadfa1e4
+    - name: DrawLazer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 176
+        y: 148
+        width: 32
+        height: 107
+      spriteId: 41af65ce40fcc2e49b7bbf4e403e0ee9
+    - name: DrawLazer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 169
+        y: 148
+        width: 49
+        height: 152
+      spriteId: 3a49b926b0d0c5843a684afd892f0469
+    - name: DrawLazer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 188
+        y: 152
+        width: 8
+        height: 148
+      spriteId: 1bcd6222369b6034282183e0f36d4ae8
+    - name: DrawLazer_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 191
+        y: 181
+        width: 3
+        height: 119
+      spriteId: c648133733089a148b2023735ba6f2f5
+    - name: DrawLazer_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 190
+        y: 204
+        width: 3
+        height: 96
+      spriteId: 12ba9bb134e84ff4281731170900e3a8
+    - name: DrawLazer_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 191
+        y: 268
+        width: 2
+        height: 32
+      spriteId: 4535775c4f971ed45959b75e0ea94f57
+    - name: DrawLazer_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 189
+        y: 150
+        width: 6
+        height: 2
+      spriteId: a44c80ebb9982824e9d0afe70cab23d7
+    - name: DrawLazer_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 188
+        y: 150
+        width: 8
+        height: 6
+      spriteId: d6ea8acf398f53749b9818ff1a6f67bc
+    - name: DrawLazer_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 8
+      spriteId: 2a4f71aae5919434496559fd08679bdd
+    - name: DrawLazer_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 188
+        y: 137
+        width: 8
+        height: 19
+      spriteId: 9fdca3b1e4b52044da5b282a544e21e1
+    - name: DrawLazer_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 188
+        y: 132
+        width: 8
+        height: 24
+      spriteId: 69d2853c10394044daa4cbd5e7b91594
+    - name: DrawLazer_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 188
+        y: 126
+        width: 8
+        height: 30
+      spriteId: 6331a3018ebb65140a5100bf716e4080
+    - name: DrawLazer_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 188
+        y: 120
+        width: 8
+        height: 36
+      spriteId: 19bc2b2e1927ad847ba62559512f4a7a
+    - name: DrawLazer_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 188
+        y: 118
+        width: 8
+        height: 38
+      spriteId: ab279181efa97c64d849ac2111e24b6a
+    - name: DrawLazer_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 182
+        y: 82
+        width: 18
+        height: 74
+      spriteId: d700abd0b9b6d02408352b6b4af92361
+    - name: DrawLazer_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 176
+        y: 45
+        width: 32
+        height: 111
+      spriteId: c0e2da55473655847982f8e82b0ed39b
+    - name: DrawLazer_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 169
+        y: 0
+        width: 49
+        height: 156
+      spriteId: 4e5fae1a551300345b3f5ed9a7a88649
+    - name: DrawLazer_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 190
+        y: 0
+        width: 4
+        height: 151
+      spriteId: a8160ec0efa0878458e9e2f59010ff91
+    - name: DrawLazer_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 191
+        y: 0
+        width: 3
+        height: 119
+      spriteId: b23176651f40ec648b6e9bcaa50ab03c
+    - name: DrawLazer_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 190
+        y: 0
+        width: 3
+        height: 96
+      spriteId: 85a12e81e3c0b3242b01f1687be832e9
+    - name: DrawLazer_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 191
+        y: 0
+        width: 2
+        height: 32
+      spriteId: 6499e205269a8f644a6eb53735e298ee
+    - name: DrawLazer_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 189
+        y: 150
+        width: 6
+        height: 2
+      spriteId: 15e644a1a2becab43b7a7f1fe61b20f4
+    - name: DrawLazer_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 189
+        y: 148
+        width: 7
+        height: 8
+      spriteId: 97f66d4f728ebfa40972b3aceb0c81f9
+    - name: DrawLazer_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 8
+      spriteId: 63c79a45208054047b9727255151c1f4
+    - name: DrawLazer_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 179
+        y: 148
+        width: 17
+        height: 8
+      spriteId: 258d6feb188bc0d48b0b686f0f3d6484
+    - name: DrawLazer_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 174
+        y: 148
+        width: 22
+        height: 8
+      spriteId: d8a5029f4804b3d45a9061454adc46bd
+    - name: DrawLazer_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 165
+        y: 148
+        width: 31
+        height: 8
+      spriteId: d102dc266f673b34a919ab53cf41fee7
+    - name: DrawLazer_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 157
+        y: 141
+        width: 39
+        height: 18
+      spriteId: d4ccd402996e52245bbd8ff4ab21c1c4
+    - name: DrawLazer_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 91
+        y: 135
+        width: 105
+        height: 32
+      spriteId: 74224be4fcaddc34eaa455072e1cc301
+    - name: DrawLazer_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 24
+        y: 148
+        width: 172
+        height: 8
+      spriteId: 183bffcbfe63a4d43b435f84e8930fbd
+    - name: DrawLazer_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 148
+        width: 196
+        height: 8
+      spriteId: 7ef6748712bb712439038682f2763be6
+    - name: DrawLazer_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: 129
+        width: 196
+        height: 47
+      spriteId: f947b606931d39b4192901f5622a5328
+    - name: DrawLazer_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: 148
+        width: 192
+        height: 8
+      spriteId: 97cdd00432abc1843a5b73687f57d5fb
+    - name: DrawLazer_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: 150
+        width: 161
+        height: 3
+      spriteId: dabf06bb1862e4649af25d51e9872a41
+    - name: DrawLazer_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: 149
+        width: 138
+        height: 3
+      spriteId: 5cf0fa9a7d8611448a8a3f817dd8a0c2
+    - name: DrawLazer_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: 150
+        width: 74
+        height: 2
+      spriteId: a9f18d4ff7409ac4984ed0b1652fb912
+    - name: DrawLazer_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 189
+        y: 150
+        width: 6
+        height: 2
+      spriteId: c461797628b95d8488404d5b1e454dc9
+    - name: DrawLazer_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 188
+        y: 148
+        width: 7
+        height: 8
+      spriteId: 03bb34b8b79f3104590fe6ec0106dfe6
+    - name: DrawLazer_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 188
+        y: 148
+        width: 8
+        height: 8
+      spriteId: a6e423f57377a5849aac5fb1c2feeaa4
+    - name: DrawLazer_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 188
+        y: 148
+        width: 17
+        height: 8
+      spriteId: 073bb0ffe77078f4eab2f7086947cce5
+    - name: DrawLazer_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 188
+        y: 148
+        width: 22
+        height: 8
+      spriteId: 7da80ad24232ee7429d70f15951e0baf
+    - name: DrawLazer_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 188
+        y: 148
+        width: 31
+        height: 8
+      spriteId: 2aba3bdf42a22c544a9156bef6e187d2
+    - name: DrawLazer_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 188
+        y: 141
+        width: 39
+        height: 18
+      spriteId: cdcfc867647b8f64ab3d7e1ef40015be
+    - name: DrawLazer_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 188
+        y: 135
+        width: 105
+        height: 32
+      spriteId: 5efc3aec717a8b148bcb2cb316750469
+    - name: DrawLazer_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 188
+        y: 148
+        width: 172
+        height: 8
+      spriteId: 906c6ba2702009e45be88cf7cfad613e
+    - name: DrawLazer_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 188
+        y: 148
+        width: 212
+        height: 8
+      spriteId: 5c2c84d2086c40d4a8c522fe9149c979
+    - name: DrawLazer_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 188
+        y: 129
+        width: 212
+        height: 47
+      spriteId: af3356e683117fd46afe8c4af1c1bd11
+    - name: DrawLazer_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 192
+        y: 148
+        width: 208
+        height: 8
+      spriteId: 00e48e19234c8bc4f89b1442776a73f0
+    - name: DrawLazer_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 223
+        y: 150
+        width: 177
+        height: 3
+      spriteId: deb2657775d7be4448542a2d35cfbf93
+    - name: DrawLazer_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 246
+        y: 149
+        width: 154
+        height: 3
+      spriteId: 21e3d99cdfe617f4694f38344ccb82f2
+    - name: DrawLazer_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 310
+        y: 150
+        width: 90
+        height: 2
+      spriteId: 98378292b0d77f3438876e7f41bff2e5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 400, y: 300}

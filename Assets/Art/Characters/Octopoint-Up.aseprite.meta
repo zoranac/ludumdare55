@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: 694eb1bbeb79cf241aad1c1368e6f79f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Octopoint-Up_Frame_0
+    originalName: 
+    pivot: {x: 1.94, y: -0.2916667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 76
+      width: 25
+      height: 24
+    spriteID: de6260af34fb1644686e3f563d8f0ea1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 76}
+  - name: Octopoint-Up_Frame_1
+    originalName: 
+    pivot: {x: 1.1279069, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 4
+      width: 43
+      height: 28
+    spriteID: 22d2e712d849bfd48816225d151df4c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 4}
+  - name: Octopoint-Up_Frame_2
+    originalName: 
+    pivot: {x: 0.9150943, y: -0.18749999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 148
+      width: 53
+      height: 32
+    spriteID: 74701eb890d73b74db3e14157c8d952b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 148}
+  - name: Octopoint-Up_Frame_3
+    originalName: 
+    pivot: {x: 0.70289856, y: -0.34210527}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 466
+      width: 69
+      height: 38
+    spriteID: 0a4da822cd88bc24ba5ecf82a6db1d34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 466}
+  - name: Octopoint-Up_Frame_4
+    originalName: 
+    pivot: {x: 0.59876543, y: -0.18867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 148
+      width: 81
+      height: 53
+    spriteID: 909a6a8ea6b447c47a7159589b9a4a28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 148}
+  - name: Octopoint-Up_Frame_5
+    originalName: 
+    pivot: {x: 0.53296703, y: -0.109375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 4
+      width: 91
+      height: 64
+    spriteID: 139d1a5207afea24cb2efe9af2560af0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 4}
+  - name: Octopoint-Up_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.11594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 97
+      height: 69
+    spriteID: 6f24bb5d4ca52cb418a55ab6101f2a09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Octopoint-Up_Frame_7
+    originalName: 
+    pivot: {x: 0.52150536, y: -0.10144927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 158
+      width: 93
+      height: 69
+    spriteID: daa3597ec8b8ff04cb5be21ded7b8882
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 158}
+  - name: Octopoint-Up_Frame_8
+    originalName: 
+    pivot: {x: 0.53296703, y: -0.14492753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 312
+      width: 91
+      height: 69
+    spriteID: 234bc9d321e673c4aa46988338491a20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 312}
+  - name: Octopoint-Up_Frame_9
+    originalName: 
+    pivot: {x: 0.53296703, y: -0.14492753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 389
+      width: 91
+      height: 69
+    spriteID: 1ea5078520cc8324d98cbab90e4a5ed8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 389}
+  - name: Octopoint-Up_Frame_10
+    originalName: 
+    pivot: {x: 0.52150536, y: -0.10144927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 235
+      width: 93
+      height: 69
+    spriteID: 19bc1451ba93e8340bfb3ea9578b5333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 235}
+  - name: Octopoint-Up_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.11594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 81
+      width: 97
+      height: 69
+    spriteID: 6db8e6204f5046142bca967ea99ebbf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 81}
+  - name: Octopoint-Up_Frame_12
+    originalName: 
+    pivot: {x: 0.53296703, y: -0.109375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 76
+      width: 91
+      height: 64
+    spriteID: ae59ad84f4e0c3c4dbf9f5ee9cb79a4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 76}
+  - name: Octopoint-Up_Frame_13
+    originalName: 
+    pivot: {x: 0.59876543, y: -0.18867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 209
+      width: 81
+      height: 53
+    spriteID: 33b4b648fad587a47adf141e430e48dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 209}
+  - name: Octopoint-Up_Frame_14
+    originalName: 
+    pivot: {x: 0.70289856, y: -0.34210527}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 270
+      width: 69
+      height: 38
+    spriteID: e5563e9fb50d8a9449c38d8f44fffa35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 270}
+  - name: Octopoint-Up_Frame_15
+    originalName: 
+    pivot: {x: 0.9150943, y: -0.18749999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 209
+      width: 53
+      height: 32
+    spriteID: 051efc23e22673e4aa97d9a0c36b3155
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 209}
+  - name: Octopoint-Up_Frame_16
+    originalName: 
+    pivot: {x: 1.1279069, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 40
+      width: 43
+      height: 28
+    spriteID: 6028c8fd9f11ce94dbd17d4fef441908
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 40}
+  - name: Octopoint-Up_Frame_17
+    originalName: 
+    pivot: {x: 1.94, y: -0.2916667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 108
+      width: 25
+      height: 24
+    spriteID: 078f652a7a0dbe047b35bb380d0f8916
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 108}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 986137667
+    name: Octopoint-Up
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Octopoint-Up_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 7
+        width: 25
+        height: 24
+      spriteId: de6260af34fb1644686e3f563d8f0ea1
+    - name: Octopoint-Up_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 43
+        height: 28
+      spriteId: 22d2e712d849bfd48816225d151df4c6
+    - name: Octopoint-Up_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 6
+        width: 53
+        height: 32
+      spriteId: 74701eb890d73b74db3e14157c8d952b
+    - name: Octopoint-Up_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 13
+        width: 69
+        height: 38
+      spriteId: 0a4da822cd88bc24ba5ecf82a6db1d34
+    - name: Octopoint-Up_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 10
+        width: 81
+        height: 53
+      spriteId: 909a6a8ea6b447c47a7159589b9a4a28
+    - name: Octopoint-Up_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 7
+        width: 91
+        height: 64
+      spriteId: 139d1a5207afea24cb2efe9af2560af0
+    - name: Octopoint-Up_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 8
+        width: 97
+        height: 69
+      spriteId: 6f24bb5d4ca52cb418a55ab6101f2a09
+    - name: Octopoint-Up_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 7
+        width: 93
+        height: 69
+      spriteId: daa3597ec8b8ff04cb5be21ded7b8882
+    - name: Octopoint-Up_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 10
+        width: 91
+        height: 69
+      spriteId: 234bc9d321e673c4aa46988338491a20
+    - name: Octopoint-Up_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 10
+        width: 91
+        height: 69
+      spriteId: 1ea5078520cc8324d98cbab90e4a5ed8
+    - name: Octopoint-Up_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 7
+        width: 93
+        height: 69
+      spriteId: 19bc1451ba93e8340bfb3ea9578b5333
+    - name: Octopoint-Up_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 8
+        width: 97
+        height: 69
+      spriteId: 6db8e6204f5046142bca967ea99ebbf4
+    - name: Octopoint-Up_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 7
+        width: 91
+        height: 64
+      spriteId: ae59ad84f4e0c3c4dbf9f5ee9cb79a4e
+    - name: Octopoint-Up_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 10
+        width: 81
+        height: 53
+      spriteId: 33b4b648fad587a47adf141e430e48dc
+    - name: Octopoint-Up_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 13
+        width: 69
+        height: 38
+      spriteId: e5563e9fb50d8a9449c38d8f44fffa35
+    - name: Octopoint-Up_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 6
+        width: 53
+        height: 32
+      spriteId: 051efc23e22673e4aa97d9a0c36b3155
+    - name: Octopoint-Up_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 43
+        height: 28
+      spriteId: 6028c8fd9f11ce94dbd17d4fef441908
+    - name: Octopoint-Up_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 7
+        width: 25
+        height: 24
+      spriteId: 078f652a7a0dbe047b35bb380d0f8916
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 97, y: 79}
