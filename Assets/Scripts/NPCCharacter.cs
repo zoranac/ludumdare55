@@ -2,23 +2,140 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class NPCCharacter : Character
 {
     public List<NPCMemory> Memory = new List<NPCMemory>();
 
+    public Animator animator;
+
+    [TextArea]
+    public List<string> SiphoningTexts = new List<string>();
+
+    [TextArea]
+    public List<string> SiphonedFromTexts = new List<string>();
+
+    [TextArea]
+    public List<string> MissedMeTexts = new List<string>();
+
+    [TextArea]
+    public List<string> MissedTexts = new List<string>();
+
+    [TextArea]
+    public List<string> PointsScoredTexts = new List<string>();
+
+    [TextArea]
+    public List<string> EnemyScoredTexts = new List<string>();
+
     public int MemoryLength = 100;
+
+
+    private bool speaking = false;
 
     public void Start()
     {
         GameEventHandler.Instance.SiphonAttempt.AddListener(addToMemory);
+        GameEventHandler.Instance.CardsBurned.AddListener(cardsBurned);
     }
 
     public override void StartTurn()
     {
-        StartCoroutine(assessTarget());
+        if (Hand.Cards.Count > 0)
+        {
+            StartCoroutine(assessTarget());
+        }
+        else
+        {
+            Deck.Instance.PullFromDeck(Hand);
+        }
     }
+
+    private IEnumerator saySiphonedFromMeLine(int value)
+    {
+        speaking = true;
+
+        yield return new WaitForSeconds(UnityEngine.Random.Range(1f, 2.5f));
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, SiphonedFromTexts.Count)].Replace("#", valueToRoman(value)));
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
+    }
+
+    private IEnumerator sayMissMeLine(int value)
+    {
+        speaking = true;
+
+        yield return new WaitForSeconds(UnityEngine.Random.Range(1f, 2.5f));
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, MissedMeTexts.Count)].Replace("#", valueToRoman(value)));
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
+    }
+
+    private IEnumerator sayMissedLine(int value)
+    {
+        speaking = true;
+
+        yield return new WaitForSeconds(UnityEngine.Random.Range(1f, 2.5f));
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, MissedTexts.Count)].Replace("#", valueToRoman(value)));
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
+    }
+
+    private IEnumerator sayPointsScoredLine(int value)
+    {
+        speaking = true;
+
+        yield return new WaitForSeconds(UnityEngine.Random.Range(1f, 2.5f));
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, PointsScoredTexts.Count)].Replace("#", valueToRoman(value)));
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
+    }
+
+    private IEnumerator sayEnemyScoredLine(int value)
+    {
+        speaking = true;
+
+        yield return new WaitForSeconds(UnityEngine.Random.Range(1f,2.5f));
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, EnemyScoredTexts.Count)].Replace("#", valueToRoman(value)));
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
+    }
+
+    private void cardsBurned(int card, Hand hand)
+    {
+        if (speaking) return;
+
+        int random = UnityEngine.Random.Range(0, 5);
+
+        if (random != 0) return;
+
+        if (hand == Hand)
+        {
+            StartCoroutine(sayPointsScoredLine(card));
+        }
+        else
+        {
+            StartCoroutine(sayEnemyScoredLine(card));
+        }
+    }
+
 
     private void addToMemory(Hand character, Hand target, int value, int count)
     {
@@ -27,6 +144,27 @@ public class NPCCharacter : Character
         if (Memory.Count > MemoryLength)
         {
             Memory.RemoveAt(0);
+        }
+
+
+        if (speaking) return;
+        int random = UnityEngine.Random.Range(0, 5);
+
+        if (random != 0) return;
+
+        if (target == Hand && count == 0)
+        {
+            StartCoroutine(sayMissMeLine(value));
+        }
+
+        if (character == Hand && count == 0)
+        {
+            StartCoroutine(sayMissedLine(value));
+        }
+
+        if (target == Hand && count > 0)
+        {
+            StartCoroutine(saySiphonedFromMeLine(value));
         }
     }
 
@@ -42,12 +180,12 @@ public class NPCCharacter : Character
         foreach (var memory in Memory) { 
             if (memory.SiphoningHand != this && countedCards.Exists(x=>x.Key == memory.Value))
             {
-                TargetOptions.Add(new CardTarget(memory.SiphoningHand, memory.Value, memory.Value+memory.Count+1));
+                TargetOptions.Add(new CardTarget(memory.SiphoningHand, memory.Value, Mathf.RoundToInt(memory.Value/2)+((memory.Count + 1) * 2)));
             }
             
             if (memory.TargetHand != this && memory.Count == 0 && countedCards.Exists(x => x.Key == memory.Value))
             {
-                SkipTargetOptions.Add(new CardTarget(memory.TargetHand, memory.Value, 0));
+                SkipTargetOptions.Add(new CardTarget(memory.TargetHand, Mathf.RoundToInt(memory.Value / 2), 0));
             }
         }
 
@@ -64,6 +202,22 @@ public class NPCCharacter : Character
         }
 
         int index = GetRandomWeightedIndex(TargetOptions.Select(x => x.Weight).ToArray());
+
+        animator.SetInteger("Target", Deck.Instance.Hands.IndexOf(TargetOptions[index].Target));
+        animator.SetTrigger("Point");
+
+        speaking = true;
+
+        CharacterTextBox.StartTypeWriterOnText(SiphoningTexts[UnityEngine.Random.Range(0, SiphoningTexts.Count)].Replace("#", valueToRoman(TargetOptions[index].CardValue)));
+
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(2.5f);
+
+        speaking = false;
 
         TargetOptions[index].Target.SiphonCards(TargetOptions[index].CardValue, Hand);
     }
@@ -121,6 +275,29 @@ public class NPCCharacter : Character
         }
 
         return -1;
+    }
+
+    private string valueToRoman(int value)
+    {
+        switch (value)
+        {
+            case 1: return "I";
+            case 2: return "II";
+            case 3: return "III";
+            case 4: return "IV";
+            case 5: return "V";
+            case 6: return "VI";
+            case 7: return "VII";
+            case 8: return "VIII";
+            case 9: return "IX";
+            case 10: return "X";
+            case 11: return "XI";
+            case 12: return "XII";
+            case 13: return "XIII";
+            default:
+                break;
+        }
+        return "";
     }
 
 }

@@ -74,7 +74,7 @@ public class PlayerCardObject : CardObject, IPointerEnterHandler, IPointerExitHa
     {
         float lerpTime = 0f;
         Vector3 start = Card.transform.localPosition;
-        Vector3 end = up ? new Vector3(0, 20, 0) : new Vector3(0, 0, 0);
+        Vector3 end = up ? new Vector3(0, 20, 0) : new Vector3(0, Random.Range(-5,10), 0);
 
         while (Card.transform.localPosition != end)
         {

@@ -16,12 +16,9 @@ public class Hand : MonoBehaviour
 
     public List<Coroutine> coroutines = new List<Coroutine>();
 
+    public bool HorizontalMove = false;
 
-    private void Start()
-    {
-        StartCoroutine(jiggle());
-    }
-
+    public Character Owner;
 
     public void GainCard(int card, bool endTurn = false)
     {
@@ -85,7 +82,7 @@ public class Hand : MonoBehaviour
                 //Vector3 m1 = Vector3.Lerp(startPoint, controlPoint, step);
                 //Vector3 m2 = Vector3.Lerp(controlPoint, moveTo, step);
                 //card.transform.position = Vector3.Lerp(m1, m2, step);
-                card.transform.position = Vector3.Lerp(startPoint, moveTo, step);
+                card.transform.position = Vector3.Lerp(startPoint, moveTo, t);
                 yield return null;
             }
             else
@@ -97,13 +94,38 @@ public class Hand : MonoBehaviour
 
         if (cardExists)
         {
-            (Cards.Find(x => x.Value == card.Value) as PlayerCardObject).IncreaseCount();
             Cards.Remove(card);
+
+            var currentCard = (Cards.Find(x => x.Value == card.Value) as PlayerCardObject);
+
+            currentCard.IncreaseCount();
             Destroy(card.gameObject);
+
+            //Burn Check
+            if (currentCard.Count == 4)
+            {
+                Owner.AddSummonPower(currentCard.Value);
+                GameEventHandler.Instance.CardsBurned.Invoke(currentCard.Value, this);
+                currentCard.Burn();
+            }
         }
         else
         {
             card.transform.SetParent(CardParent);
+            card.OnDestroy.AddListener(removeCard);
+
+            //Burn Check
+            if (Cards.Where(x => x.Value == card.Value).Count() == 4 )
+            {
+                Owner.AddSummonPower(card.Value);
+                GameEventHandler.Instance.CardsBurned.Invoke(card.Value, this);
+                foreach (var item in Cards.Where(x => x.Value == card.Value))
+                {
+                    item.Burn();
+                }
+
+               
+            }
         }
 
         coroutines.Remove(self);
@@ -112,6 +134,12 @@ public class Hand : MonoBehaviour
         {
             TurnHandler.Instance.NextTurn();
         }
+    }
+
+    private void removeCard(CardObject card)
+    {
+        Cards.Remove(card);
+        card.OnDestroy?.RemoveListener(removeCard);
     }
 
     private IEnumerator removeCards(List<CardObject> cards, int value, Hand toHand = null)
@@ -132,11 +160,26 @@ public class Hand : MonoBehaviour
                 movingCard.transform.SetParent(transform.parent);
                 //Vector2 controlPoint = card.transform.position + (MoveToPosition - card.transform.position) / 2 + Vector3.up * 5.0f;
                 //Vector2 spawnPos = MoveToPosition.position; //new Vector2(GetComponent<RectTransform>().rect.xMax, MoveToPosition.position.y);
-                float step = 150 * Time.deltaTime;
-                while (Vector3.Distance(movingCard.transform.position, MoveToPosition.position) > 1)
+                float step = 0;
+
+                Vector3 moveTo = HorizontalMove ?
+                    new Vector3(MoveToPosition.position.x, movingCard.transform.position.y, movingCard.transform.position.z)
+                    : new Vector3(movingCard.transform.position.x, MoveToPosition.position.y, movingCard.transform.position.z);
+
+                if (step < 1f)
                 {
-                    movingCard.transform.position = Vector3.MoveTowards(movingCard.transform.position, MoveToPosition.position, step);
+                    step += Time.deltaTime;
+                    float t = step / 2f;
+                    //Vector3 m1 = Vector3.Lerp(startPoint, controlPoint, step);
+                    //Vector3 m2 = Vector3.Lerp(controlPoint, moveTo, step);
+                    //card.transform.position = Vector3.Lerp(m1, m2, step);
+                    card.transform.position = Vector3.Lerp(movingCard.transform.position, moveTo, t);
                     yield return null;
+                }
+                else
+                {
+                    card.transform.position = moveTo;
+                    break;
                 }
 
                 if (movingCard == card)
@@ -168,39 +211,17 @@ public class Hand : MonoBehaviour
                 yield return null;
             }
 
+            GameEventHandler.Instance.SiphonAttempt.Invoke(toHand, this, value, cards.Count());
+
             TurnHandler.Instance.NextTurn();
         }
         else
         {
+            GameEventHandler.Instance.SiphonAttempt.Invoke(toHand, this, value, cards.Count());
+
             toHand.PullFromDeck();
         }
-
-        GameEventHandler.Instance.SiphonAttempt.Invoke(toHand, this, value, cards.Count());
     }
-
-
-    IEnumerator jiggle()
-    {
-        bool up = true;
-        Vector3 origin = transform.localPosition;
-        while (true)
-        {
-            float lerpTime = 0f;
-            Vector3 start = transform.localPosition;
-            Vector3 end = up ? origin + new Vector3(0, 20, 0) : origin;
-
-            while (transform.localPosition != end)
-            {
-                transform.localPosition = Vector3.Lerp(start, end, lerpTime * Mathf.Sin(360 * lerpTime));
-                lerpTime += Time.deltaTime;
-
-                yield return null;
-            }
-
-            up = !up;
-        }
-    }
-
 }
 
 

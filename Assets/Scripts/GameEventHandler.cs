@@ -10,6 +10,9 @@ public class GameEventHandler : MonoBehaviour
     [HideInInspector]
     public UnityEvent<Hand, Hand, int, int> SiphonAttempt = new UnityEvent<Hand, Hand, int, int>();
 
+    [HideInInspector]
+    public UnityEvent<int, Hand> CardsBurned = new UnityEvent<int, Hand> ();
+
     public List<Sprite> CardFaces = new List<Sprite>();
 
     public void Awake()

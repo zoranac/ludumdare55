@@ -6,6 +6,13 @@ public class PlayerCharacter : Character
 {
     public override void StartTurn()
     {
-        CardSelect.Instance.StartSelection();
+        if (Hand.Cards.Count > 0)
+        {
+            CardSelect.Instance.StartSelection();
+        }
+        else
+        {
+            Deck.Instance.PullFromDeck(Hand);
+        }
     }
 }

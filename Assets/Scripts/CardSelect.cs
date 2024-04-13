@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -57,6 +58,11 @@ public class CardSelect : MonoBehaviour
             cardSelected.selected = false;
         }
 
+        foreach (var hand in Deck.Instance.Hands.Where(x => x is NPCHand))
+        {
+            (hand as NPCHand).OutlineImage.enabled = false;
+        }
+
         SelectCardText.SetActive(true);
         SelectTargetText.SetActive(false);
         selectionMode = SelectionMode.Card;
@@ -81,6 +87,13 @@ public class CardSelect : MonoBehaviour
             cardSelected = card;
             cardSelected.selected = true;
             selectionMode = SelectionMode.Target;
+
+            foreach (var hand in Deck.Instance.Hands.Where(x => x is NPCHand))
+            {
+                (hand as NPCHand).OutlineImage.enabled = true;
+                (hand as NPCHand).OutlineImage.color = Color.white;
+            }
+
         }
     }
 
@@ -90,6 +103,12 @@ public class CardSelect : MonoBehaviour
         {
             cardSelected.ScaleDown();
             cardSelected.selected = false;
+        }
+
+        foreach (var hand in Deck.Instance.Hands.Where(x => x is NPCHand))
+        {
+            (hand as NPCHand).OutlineImage.enabled = false;
+            
         }
 
         SelectCardText.SetActive(false);
