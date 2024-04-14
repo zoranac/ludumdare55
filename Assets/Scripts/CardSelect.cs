@@ -16,6 +16,8 @@ public class CardSelect : MonoBehaviour
     public GameObject SelectCardText;
     public GameObject SelectTargetText;
 
+    private bool targetSelected = false;
+
     public static CardSelect Instance;
 
     public void Awake()
@@ -31,8 +33,6 @@ public class CardSelect : MonoBehaviour
     }
 
 
-  
-
     public SelectionMode selectionMode = SelectionMode.None;
 
     public Hand PlayerHand;
@@ -45,12 +45,41 @@ public class CardSelect : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape))
             {
-                StartSelection();
+                StartSelection(false);
+            }
+        }
+
+      
+    }
+
+    IEnumerator Waiting()
+    {
+        yield return new WaitForSeconds(12f);
+
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(12f, 24f));
+
+            if (TurnHandler.Instance.CurrentTurnCharacterIndex == 0 && !targetSelected)
+            {
+                foreach (var character in TurnHandler.Instance.CharacterList)
+                {
+                    if (character is PlayerCharacter) continue;
+
+                    int random = Random.Range(0, 6);
+
+                    if (random != 0) continue;
+
+                    (character as NPCCharacter).PlayWaitingText();
+
+                    break;
+
+                }
             }
         }
     }
 
-    public void StartSelection()
+    public void StartSelection(bool restartWaiting = true)
     {
         if (cardSelected != null)
         {
@@ -67,6 +96,13 @@ public class CardSelect : MonoBehaviour
         SelectTargetText.SetActive(false);
         selectionMode = SelectionMode.Card;
         cardSelected = null;
+        targetSelected = false;
+
+        if (restartWaiting)
+        {
+            StopAllCoroutines();
+            StartCoroutine(Waiting());
+        }
     }
 
     public void TargetSelect(Hand hand)
@@ -74,6 +110,7 @@ public class CardSelect : MonoBehaviour
         if (selectionMode == SelectionMode.Target)
         {
             hand.SiphonCards(cardSelected.Value, PlayerHand);
+            targetSelected = true;
             Close();
         }
     }

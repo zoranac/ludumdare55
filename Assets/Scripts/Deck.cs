@@ -23,6 +23,8 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public TypeWriter DeckTextbox;
 
+    bool noCardsInHandTextShown = false;
+    bool noCardsInDeckTextShown = false;
     public void Awake()
     {
         if (Instance != null && Instance != this)
@@ -67,6 +69,23 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public IEnumerator StartGameAfterDeal()
     {
+        yield return new WaitForSeconds(Random.Range(2f, 6f));
+
+        foreach (var character in TurnHandler.Instance.CharacterList)
+        {
+            if (character is PlayerCharacter) continue;
+
+            int random = Random.Range(0, 4);
+
+            if (random != 0) continue;
+
+            (character as NPCCharacter).PlayStartGameText();
+
+            break;
+
+        }
+
+
         while (true)
         {
             if (Hands[0].coroutines.Count == 0)
@@ -121,22 +140,50 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
         else
         {
-            if (toHand.Cards.Count > 0)
+            if (TurnHandler.Instance.CurrentTurnCharacterIndex == 0)
             {
-                DeckTextbox.StartTypeWriterOnText("There are no more cards, use what you have to summon me.");
+                if (toHand.Cards.Count > 0)
+                {
+                    if (!noCardsInDeckTextShown)
+                    {
+                        noCardsInDeckTextShown = true;
+                        DeckTextbox.StartTypeWriterOnText("There Are No More Cards, Use What You Have To Summon Me");
+                    }
+                    else
+                    {
+                        int rand = Random.Range(0, 3);
+                        if (rand == 0)
+                        {
+                            DeckTextbox.StartTypeWriterOnText("Nothing");
+                        }
+                        else if (rand == 1)
+                        {
+                            DeckTextbox.StartTypeWriterOnText("Missed");
+                        }
+                        else if (rand == 2)
+                        {
+                            DeckTextbox.StartTypeWriterOnText("Empty");
+                        }
+                    }
+                }
+                else if (!noCardsInHandTextShown)
+                {
+                    noCardsInHandTextShown = true;
+                    DeckTextbox.StartTypeWriterOnText("You Fool, You Have Nothing Left To Summon Me");
+                }
+
+                StartCoroutine(delayNextTurn());
             }
             else
             {
-                DeckTextbox.StartTypeWriterOnText("You fool, you have nothing left to summon me.");
+                TurnHandler.Instance.NextTurn();
             }
-
-            StartCoroutine(delayNextTurn());
         }
     }
 
     IEnumerator delayNextTurn()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3f);
 
         TurnHandler.Instance.NextTurn();
     }
@@ -145,12 +192,13 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         NumberOfCardsText.transform.parent.gameObject.SetActive(true);
+        NumberOfCardsText.transform.parent.GetComponent<FadeButton>().FadeIn();
         NumberOfCardsText.text = Cards.Count.ToString();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        NumberOfCardsText.transform.parent.gameObject.SetActive(false);
+        NumberOfCardsText.transform.parent.GetComponent<FadeButton>().FadeOut();//.gameObject.SetActive(false);
 
     }
 }

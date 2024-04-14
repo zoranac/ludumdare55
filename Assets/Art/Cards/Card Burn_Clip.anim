@@ -41,7 +41,7 @@ AnimationClip:
     - time: 0.9
       value: {fileID: 228502037527362630, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
     - time: 1
-      value: {fileID: 228502037527362630, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
+      value: {fileID: -2196423525337144016, guid: 92be0ba9b3cc4274386b9cddf43a405d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -74,7 +74,7 @@ AnimationClip:
     - {fileID: -6472056651834203837, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
     - {fileID: 3380521386793673191, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
     - {fileID: 228502037527362630, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
-    - {fileID: 228502037527362630, guid: 225606fab61dcf54daa0d5d4dbadf567, type: 3}
+    - {fileID: -2196423525337144016, guid: 92be0ba9b3cc4274386b9cddf43a405d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -99,4 +99,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1
+    functionName: HideImage
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

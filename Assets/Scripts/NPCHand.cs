@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class NPCHand : Hand, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public Image OutlineImage;
-
+    public Color HoverColor;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -16,9 +16,9 @@ public class NPCHand : Hand, IPointerEnterHandler, IPointerExitHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (OutlineImage.isActiveAndEnabled)
+        if (OutlineImage.isActiveAndEnabled && CardSelect.Instance.selectionMode == SelectionMode.Target)
         {
-            OutlineImage.color = new Color(0.6132076f, 0.2632165f, 0.5177556f);
+            OutlineImage.color = HoverColor;// new Color(0.6132076f, 0.2632165f, 0.5177556f);
         }
     }
 

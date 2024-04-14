@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class Hand : MonoBehaviour
 {
@@ -19,6 +17,11 @@ public class Hand : MonoBehaviour
     public bool HorizontalMove = false;
 
     public Character Owner;
+
+    public AudioClip AddToHand;
+    public AudioClip RemoveFromHand;
+
+    public bool Order = false;
 
     public void GainCard(int card, bool endTurn = false)
     {
@@ -52,26 +55,39 @@ public class Hand : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("Adding Card " + card.Value + " To " + gameObject.name);
+       // Debug.Log("Adding Card " + card.Value + " To " + gameObject.name);
 
         card.transform.SetParent(transform.parent);
         card.transform.position = MoveToPosition.position;
 
         Vector3 moveTo = transform.position;
-        bool cardExists = false;
+        CardObject cardExists = null;
+
 
 
         if (CardPrefab is PlayerCardObject && Cards.Exists(x => x.Value == card.Value && x != card))
         {
-            cardExists = true;
-            moveTo = Cards.Find(x => x.Value == card.Value && x != card).transform.position;
+            cardExists = Cards.Find(x => x.Value == card.Value && x != card);
+            moveTo = cardExists.transform.position;
         }
 
 
         float step = 0;
         //Vector3 dir = Vector3.Cross(MoveToPosition.position, moveTo);
         //Vector3 controlPoint = MoveToPosition.position + (moveTo - MoveToPosition.position) / 2 + dir.normalized*50;
-        Vector3 startPoint = new Vector3(moveTo.x, card.transform.position.y);
+        Vector3 startPoint = HorizontalMove ? new Vector3(card.transform.position.x, moveTo.y)
+            : new Vector3(moveTo.x, card.transform.position.y);
+
+        if (cardExists != null)
+        {
+            cardExists.AudioSource.clip = AddToHand;
+            cardExists.AudioSource.Play();
+        }
+        else
+        {
+            card.AudioSource.clip = AddToHand;
+            card.AudioSource.Play();
+        }
 
         while (true)
         {
@@ -79,9 +95,6 @@ public class Hand : MonoBehaviour
             {
                 step += Time.deltaTime;
                 float t = step / 1f;
-                //Vector3 m1 = Vector3.Lerp(startPoint, controlPoint, step);
-                //Vector3 m2 = Vector3.Lerp(controlPoint, moveTo, step);
-                //card.transform.position = Vector3.Lerp(m1, m2, step);
                 card.transform.position = Vector3.Lerp(startPoint, moveTo, t);
                 yield return null;
             }
@@ -92,7 +105,8 @@ public class Hand : MonoBehaviour
             }
         }
 
-        if (cardExists)
+     
+        if (cardExists != null)
         {
             Cards.Remove(card);
 
@@ -102,7 +116,7 @@ public class Hand : MonoBehaviour
             Destroy(card.gameObject);
 
             //Burn Check
-            if (currentCard.Count == 4)
+            if (currentCard.Count == 4 )
             {
                 Owner.AddSummonPower(currentCard.Value);
                 GameEventHandler.Instance.CardsBurned.Invoke(currentCard.Value, this);
@@ -115,7 +129,7 @@ public class Hand : MonoBehaviour
             card.OnDestroy.AddListener(removeCard);
 
             //Burn Check
-            if (Cards.Where(x => x.Value == card.Value).Count() == 4 )
+            if (Cards.Where(x => x.Value == card.Value).Count() == 4 && coroutines.Count == 1)
             {
                 Owner.AddSummonPower(card.Value);
                 GameEventHandler.Instance.CardsBurned.Invoke(card.Value, this);
@@ -123,8 +137,15 @@ public class Hand : MonoBehaviour
                 {
                     item.Burn();
                 }
-
-               
+            }
+            else if (Order)
+            {
+                int i = 0;
+                foreach (var c in Cards.OrderBy(x => x.Value))
+                {
+                    c.transform.SetSiblingIndex(i);
+                    i++;
+                } 
             }
         }
 
@@ -149,13 +170,18 @@ public class Hand : MonoBehaviour
             foreach (CardObject card in cards)
             {
                 var movingCard = card;
+                int count = 1;
 
-                if (CardPrefab is PlayerCardObject && card != null && (card as PlayerCardObject).Count > 10)
+                if (CardPrefab is PlayerCardObject && card != null && (card as PlayerCardObject).Count > 1)
                 {
-                    (card as PlayerCardObject).DecreaseCount();
-                    movingCard = Instantiate(CardPrefab, transform);
-                    movingCard.transform.localPosition = card.transform.position;
+                    count = (card as PlayerCardObject).Count;
+                    //movingCard = Instantiate(CardPrefab, transform);
+                    //movingCard.transform.localPosition = card.transform.position;
                 }
+
+
+                card.AudioSource.clip = RemoveFromHand;
+                card.AudioSource.Play();
 
                 movingCard.transform.SetParent(transform.parent);
                 //Vector2 controlPoint = card.transform.position + (MoveToPosition - card.transform.position) / 2 + Vector3.up * 5.0f;
@@ -166,21 +192,24 @@ public class Hand : MonoBehaviour
                     new Vector3(MoveToPosition.position.x, movingCard.transform.position.y, movingCard.transform.position.z)
                     : new Vector3(movingCard.transform.position.x, MoveToPosition.position.y, movingCard.transform.position.z);
 
-                if (step < 1f)
+
+                while (true)
                 {
-                    step += Time.deltaTime;
-                    float t = step / 2f;
-                    //Vector3 m1 = Vector3.Lerp(startPoint, controlPoint, step);
-                    //Vector3 m2 = Vector3.Lerp(controlPoint, moveTo, step);
-                    //card.transform.position = Vector3.Lerp(m1, m2, step);
-                    card.transform.position = Vector3.Lerp(movingCard.transform.position, moveTo, t);
-                    yield return null;
+                    if (step < 2f)
+                    {
+                        step += Time.deltaTime;
+                        float t = step / 2f;
+                        card.transform.position = Vector3.Lerp(movingCard.transform.position, moveTo, t);
+                        yield return null;
+                    }
+                    else
+                    {
+                        card.transform.position = moveTo;
+                        break;
+                    }
                 }
-                else
-                {
-                    card.transform.position = moveTo;
-                    break;
-                }
+
+
 
                 if (movingCard == card)
                 {
@@ -188,11 +217,14 @@ public class Hand : MonoBehaviour
                     Destroy(card.gameObject);
                 }
 
-                Debug.Log("Removing Card " + card.Value + " From " + gameObject.name);
+                //Debug.Log("Removing Card " + card.Value + " From " + gameObject.name);
 
                 if (toHand != null)
                 {
-                    toHand.GainCard(value, false);
+                    for (int i = 0; i < count; i++)
+                    {
+                        toHand.GainCard(value, false);
+                    }
                 }
             }
 
@@ -218,6 +250,8 @@ public class Hand : MonoBehaviour
         else
         {
             GameEventHandler.Instance.SiphonAttempt.Invoke(toHand, this, value, cards.Count());
+
+            yield return new WaitForSeconds(1f);
 
             toHand.PullFromDeck();
         }

@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 9da5997daa077be458a934f15f750ac8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Skele Point Bottom_Clip
+    second: {fileID: 7400000, guid: 2bf5aa14f87c0e2478ab49289a16946f, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638486350399681920
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Skele Point Bottom_Frame_1
+    originalName: 
+    pivot: {x: -1.1111113, y: -8.166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 445
+      width: 9
+      height: 12
+    spriteID: a4a60a930abe98c42a7e50539f4b9325
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 445}
+  - name: Skele Point Bottom_Frame_2
+    originalName: 
+    pivot: {x: -0.75000006, y: -3.5833335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 264
+      width: 12
+      height: 24
+    spriteID: d5bd5442df0dc674fb80d8ba12a4242e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 264}
+  - name: Skele Point Bottom_Frame_3
+    originalName: 
+    pivot: {x: -0.6153846, y: -1.6190476}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 214
+      width: 13
+      height: 42
+    spriteID: 388fc1c5a271f5644887d92d363f760d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 214}
+  - name: Skele Point Bottom_Frame_4
+    originalName: 
+    pivot: {x: -0.5333333, y: -1.1568627}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 450
+      width: 15
+      height: 51
+    spriteID: 0c8e5cd904214324fb26898a4ca7f87c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 450}
+  - name: Skele Point Bottom_Frame_5
+    originalName: 
+    pivot: {x: -0.5333333, y: -0.6923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 304
+      width: 15
+      height: 65
+    spriteID: e18a90f9ee499b944b98987dd1e327c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 304}
+  - name: Skele Point Bottom_Frame_6
+    originalName: 
+    pivot: {x: 0.63492066, y: -0.34146342}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 63
+      height: 82
+    spriteID: dfaff8ad32991d1469400d6414507f73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 4}
+  - name: Skele Point Bottom_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.13402061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 4
+      width: 84
+      height: 97
+    spriteID: 5215ecdc70b02b84a9ca5b4949b292dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 4}
+  - name: Skele Point Bottom_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 84
+      height: 110
+    spriteID: 3fdf10a590410aa46add6d2e689fe39d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Skele Point Bottom_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 122
+      width: 84
+      height: 110
+    spriteID: b5a1a24e641fc9f4e96840c02a0c880d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 122}
+  - name: Skele Point Bottom_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 240
+      width: 84
+      height: 110
+    spriteID: a004a1f315c60be4d9ce3dbc755e054b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 240}
+  - name: Skele Point Bottom_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 358
+      width: 84
+      height: 110
+    spriteID: d80b5c7aa239926498319f1ffbcb4d0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 358}
+  - name: Skele Point Bottom_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.13402061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 109
+      width: 84
+      height: 97
+    spriteID: d26f20a4c7f32b1499da2f3a711bf8f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 109}
+  - name: Skele Point Bottom_Frame_13
+    originalName: 
+    pivot: {x: 0.63492066, y: -0.34146342}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 214
+      width: 63
+      height: 82
+    spriteID: 3747f1d17ecda1d49a7c88e37ca24e8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 214}
+  - name: Skele Point Bottom_Frame_14
+    originalName: 
+    pivot: {x: -0.5333333, y: -0.6923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 377
+      width: 15
+      height: 65
+    spriteID: 4877f82c3cd4dcf428a5f59ea3b36ba2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 377}
+  - name: Skele Point Bottom_Frame_15
+    originalName: 
+    pivot: {x: -0.5333333, y: -1.1568627}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 304
+      width: 15
+      height: 51
+    spriteID: db59ef9387ac92c448cd48008ddc0782
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 304}
+  - name: Skele Point Bottom_Frame_16
+    originalName: 
+    pivot: {x: -0.6153846, y: -1.6190476}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 363
+      width: 13
+      height: 42
+    spriteID: 5e964ff4d2ab6674abaecdeaf5dc8935
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 363}
+  - name: Skele Point Bottom_Frame_17
+    originalName: 
+    pivot: {x: -0.75000006, y: -3.5833335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 413
+      width: 12
+      height: 24
+    spriteID: 00346d965cc1d3f47b89990fbe1fcb0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 413}
+  - name: Skele Point Bottom_Frame_18
+    originalName: 
+    pivot: {x: -1.1111113, y: -8.166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 465
+      width: 9
+      height: 12
+    spriteID: 294bbee2bd838c94f8a735ccebc1fa69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 465}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 574726895
+    name: Skele Point Bottom
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Skele Point Bottom_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 52
+        y: 98
+        width: 9
+        height: 12
+      spriteId: a4a60a930abe98c42a7e50539f4b9325
+    - name: Skele Point Bottom_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 51
+        y: 86
+        width: 12
+        height: 24
+      spriteId: d5bd5442df0dc674fb80d8ba12a4242e
+    - name: Skele Point Bottom_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 50
+        y: 68
+        width: 13
+        height: 42
+      spriteId: 388fc1c5a271f5644887d92d363f760d
+    - name: Skele Point Bottom_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 50
+        y: 59
+        width: 15
+        height: 51
+      spriteId: 0c8e5cd904214324fb26898a4ca7f87c
+    - name: Skele Point Bottom_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 50
+        y: 45
+        width: 15
+        height: 65
+      spriteId: e18a90f9ee499b944b98987dd1e327c8
+    - name: Skele Point Bottom_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 2
+        y: 28
+        width: 63
+        height: 82
+      spriteId: dfaff8ad32991d1469400d6414507f73
+    - name: Skele Point Bottom_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 13
+        width: 84
+        height: 97
+      spriteId: 5215ecdc70b02b84a9ca5b4949b292dd
+    - name: Skele Point Bottom_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 84
+        height: 110
+      spriteId: 3fdf10a590410aa46add6d2e689fe39d
+    - name: Skele Point Bottom_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 84
+        height: 110
+      spriteId: b5a1a24e641fc9f4e96840c02a0c880d
+    - name: Skele Point Bottom_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 84
+        height: 110
+      spriteId: a004a1f315c60be4d9ce3dbc755e054b
+    - name: Skele Point Bottom_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 84
+        height: 110
+      spriteId: d80b5c7aa239926498319f1ffbcb4d0e
+    - name: Skele Point Bottom_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 13
+        width: 84
+        height: 97
+      spriteId: d26f20a4c7f32b1499da2f3a711bf8f8
+    - name: Skele Point Bottom_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 2
+        y: 28
+        width: 63
+        height: 82
+      spriteId: 3747f1d17ecda1d49a7c88e37ca24e8d
+    - name: Skele Point Bottom_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 50
+        y: 45
+        width: 15
+        height: 65
+      spriteId: 4877f82c3cd4dcf428a5f59ea3b36ba2
+    - name: Skele Point Bottom_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 50
+        y: 59
+        width: 15
+        height: 51
+      spriteId: db59ef9387ac92c448cd48008ddc0782
+    - name: Skele Point Bottom_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 50
+        y: 68
+        width: 13
+        height: 42
+      spriteId: 5e964ff4d2ab6674abaecdeaf5dc8935
+    - name: Skele Point Bottom_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 51
+        y: 86
+        width: 12
+        height: 24
+      spriteId: 00346d965cc1d3f47b89990fbe1fcb0e
+    - name: Skele Point Bottom_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 52
+        y: 98
+        width: 9
+        height: 12
+      spriteId: 294bbee2bd838c94f8a735ccebc1fa69
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 84, y: 110}

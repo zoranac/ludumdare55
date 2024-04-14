@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,13 +14,30 @@ public class CardObject : MonoBehaviour
 
     public Animator animator;
 
+    [HideInInspector]
     public UnityEvent<CardObject> OnDestroy = new UnityEvent<CardObject> ();
+
+    bool destroy = false;
+
+    public AudioSource AudioSource;
+
+    public AudioClip BurnSound;
 
     private void Start()
     {
         //StartCoroutine(jiggle());
 
         CardImage.transform.position = new Vector3(CardImage.transform.position.x, Random.Range(-5,10) + CardImage.transform.position.y, CardImage.transform.position.z);
+    }
+
+    private void Update()
+    {
+        if (destroy)
+        {
+            destroy = false;
+            OnDestroy.Invoke(this);
+            Destroy(gameObject);
+        }
     }
 
 
@@ -31,24 +49,26 @@ public class CardObject : MonoBehaviour
 
     public void Burn()
     {
+
+        AudioSource.clip = BurnSound;
+        AudioSource.Play();
+
         transform.SetParent(transform.parent.parent);
 
         CardImage.gameObject.SetActive(false);
         animator.gameObject.SetActive(true);
 
         StartCoroutine(awaitDestruction());
+        
     }
 
     private IEnumerator awaitDestruction()
     {
-        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-        {
-            yield return null;
-        }
+        yield return new WaitForSeconds(2.5f);
 
-        OnDestroy.Invoke(this);
+        destroy = true;
 
-        Destroy(gameObject);
+        yield break;
     }
 
     IEnumerator jiggle()

@@ -14,6 +14,8 @@ public class PlayerCardObject : CardObject, IPointerEnterHandler, IPointerExitHa
     private int count = 0;
     public bool selected = false;
 
+    public AudioClip HoverSound;
+
     public int Count
     {
         get { return count; }
@@ -72,6 +74,12 @@ public class PlayerCardObject : CardObject, IPointerEnterHandler, IPointerExitHa
 
     public IEnumerator Scale(bool up)
     {
+        if (up)
+        {
+            AudioSource.clip = HoverSound;
+            AudioSource.Play();
+        }
+
         float lerpTime = 0f;
         Vector3 start = Card.transform.localPosition;
         Vector3 end = up ? new Vector3(0, 20, 0) : new Vector3(0, Random.Range(-5,10), 0);

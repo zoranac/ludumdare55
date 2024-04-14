@@ -12,6 +12,8 @@ public class TurnHandler : MonoBehaviour
     public static TurnHandler Instance;
 
     public Animator LazerAnim;
+    public AudioSource AudioSource;
+    public AudioClip Lazer;
 
     private bool delay;
 
@@ -39,10 +41,14 @@ public class TurnHandler : MonoBehaviour
     {
         if (count == 0)
         {
-            delay = true;
-            LazerAnim.SetInteger("Target", Deck.Instance.Hands.FindIndex(x => x == siphoner));
-            LazerAnim.SetTrigger("Fire");
-
+            if (Deck.Instance.Cards.Count > 0)
+            {
+                delay = true;
+                LazerAnim.SetInteger("Target", Deck.Instance.Hands.FindIndex(x => x == siphoner));
+                LazerAnim.SetTrigger("Fire");
+                AudioSource.clip = Lazer;
+                AudioSource.Play();
+            }
         }
     }
 
