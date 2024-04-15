@@ -3520,18 +3520,26 @@ MonoBehaviour:
   - I shall <i>DEVOUR</i> all of your #s
   - I hunger for your #s
   - Your #s may sate me
+  - My #s consume yours
+  - The void comes for your #s
+  - Let me taste your #s
   SiphonedFromTexts:
   - <i>MY POWER</i>, No!
   - Void take you
+  - Disgorge that!
   MissedMeTexts:
   - Feebleminded
   - Your hunger continues
+  - You cannot comprehend the void
   MissedTexts:
   - <i>IMPOSSIBLE</i>
   - The void beckons
+  - Where is my subsistence?
   PointsScoredTexts:
   - I am not yet satiated
   - You shall be consumed next
+  - The void grows
+  - My gluttony cannot be contained
   EnemyScoredTexts:
   - My stomach grows empty
   - A waste of sustenance
@@ -4970,7 +4978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: It is the Unholy One's blessing that you are my opponents
+  m_text: I am impervious with the blessings of the Unholy One
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c874cb8a5d5c22408ca49205f8f5479, type: 2}
   m_sharedMaterial: {fileID: -1597280035958435701, guid: 5c874cb8a5d5c22408ca49205f8f5479, type: 2}
@@ -6375,13 +6383,15 @@ MonoBehaviour:
   - I shall drain you of your #s
   - I require your #s
   - I shall seize your #s
+  - I am quite fond of #s, especially yours
   SiphonedFromTexts:
   - Do you wish to see my true power?
   - You dare steal from <i>ME</i>?
+  - This is not the end.
   MissedMeTexts:
   - Pathetic
   - Its more enjoyable if you try, or are you just that bad?
-  - You actually thought I had a #? Pitiful
+  - You actually thought I had #s? Pitiful
   MissedTexts:
   - This is part of my plan
   - I bide my time
@@ -7063,13 +7073,17 @@ MonoBehaviour:
   - Your offering of #s will be recognized
   - The Unholy One commands I take your #s
   - Your #s for tribute
+  - 'The Unholy One desires your #s '
+  - Your tithe of #s are due
   SiphonedFromTexts:
   - You will burn for that
   - You tempt the Unholy One's wrath
   - Do not tempt fate
+  - The Unholy One does not forget
   MissedMeTexts:
   - Your lack of faith shows
   - What you seek resides elsewhere
+  - I am impervious to your flailing
   MissedTexts:
   - I shall repent
   - I was wrong
@@ -7077,8 +7091,11 @@ MonoBehaviour:
   PointsScoredTexts:
   - Praise be to the Unholy One
   - A prophecy fulfilled
+  - The Unholy One favors me
   EnemyScoredTexts:
   - Your day of reckoning draws near
+  - You have wrought the Unholy One's ire
+  - You lay bare before the Unholy One
   GameStartTexts:
   - It is the Unholy One's blessing that you are my opponents
   WaitingTexts:
