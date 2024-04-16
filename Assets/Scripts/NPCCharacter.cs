@@ -126,7 +126,7 @@ public class NPCCharacter : Character
 
         CharacterTextBox.StartTypeWriterOnText(MissedMeTexts[UnityEngine.Random.Range(0, MissedMeTexts.Count)].Replace("#", valueToRoman(value)));
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
 
         speaking = false;
     }
@@ -142,7 +142,7 @@ public class NPCCharacter : Character
 
         CharacterTextBox.StartTypeWriterOnText(MissedTexts[UnityEngine.Random.Range(0, MissedTexts.Count)].Replace("#", valueToRoman(value)));
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
 
         speaking = false;
     }
@@ -158,7 +158,7 @@ public class NPCCharacter : Character
 
         CharacterTextBox.StartTypeWriterOnText(PointsScoredTexts[UnityEngine.Random.Range(0, PointsScoredTexts.Count)].Replace("#", valueToRoman(value)));
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
 
         speaking = false;
     }
@@ -174,7 +174,7 @@ public class NPCCharacter : Character
 
         CharacterTextBox.StartTypeWriterOnText(EnemyScoredTexts[UnityEngine.Random.Range(0, EnemyScoredTexts.Count)].Replace("#", valueToRoman(value)));
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
 
         speaking = false;
     }

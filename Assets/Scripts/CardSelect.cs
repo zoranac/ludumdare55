@@ -107,7 +107,7 @@ public class CardSelect : MonoBehaviour
 
     public void TargetSelect(Hand hand)
     {
-        if (selectionMode == SelectionMode.Target)
+        if (selectionMode == SelectionMode.Target && hand.Cards.Count > 0)
         {
             hand.SiphonCards(cardSelected.Value, PlayerHand);
             targetSelected = true;
@@ -127,6 +127,8 @@ public class CardSelect : MonoBehaviour
 
             foreach (var hand in Deck.Instance.Hands.Where(x => x is NPCHand))
             {
+                if (hand.Cards.Count() <= 0) continue;
+
                 (hand as NPCHand).OutlineImage.enabled = true;
                 (hand as NPCHand).OutlineImage.color = Color.white;
             }

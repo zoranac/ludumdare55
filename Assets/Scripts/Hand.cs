@@ -91,10 +91,10 @@ public class Hand : MonoBehaviour
 
         while (true)
         {
-            if (step < 1f)
+            if (step < .6f)
             {
                 step += Time.deltaTime;
-                float t = step / 1f;
+                float t = step / .6f;
                 card.transform.position = Vector3.Lerp(startPoint, moveTo, t);
                 yield return null;
             }
@@ -120,6 +120,7 @@ public class Hand : MonoBehaviour
             {
                 Owner.AddSummonPower(currentCard.Value);
                 GameEventHandler.Instance.CardsBurned.Invoke(currentCard.Value, this);
+                Cards.Remove(currentCard);
                 currentCard.Burn();
             }
         }
@@ -133,10 +134,18 @@ public class Hand : MonoBehaviour
             {
                 Owner.AddSummonPower(card.Value);
                 GameEventHandler.Instance.CardsBurned.Invoke(card.Value, this);
+                List<CardObject> removeList = new List<CardObject>();
                 foreach (var item in Cards.Where(x => x.Value == card.Value))
                 {
+                    removeList.Add(item);
                     item.Burn();
                 }
+
+                foreach (var item in removeList)
+                {
+                    Cards.Remove(item);
+                }
+
             }
             else if (Order)
             {
@@ -195,10 +204,10 @@ public class Hand : MonoBehaviour
 
                 while (true)
                 {
-                    if (step < 2f)
+                    if (step < .6f)
                     {
                         step += Time.deltaTime;
-                        float t = step / 2f;
+                        float t = step / .6f;
                         card.transform.position = Vector3.Lerp(movingCard.transform.position, moveTo, t);
                         yield return null;
                     }
